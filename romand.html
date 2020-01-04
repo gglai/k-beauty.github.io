@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ROMAND</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/brand.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+	<div class=navv id="navbar">		
+			<div>
+				<a href="index.html"><img src="image/indexpic/K透.png" class="weblogo" id="logo"></a>
+			</div>
+		<ul class="cool" id="brandmove">
+				
+			<a href="aboutus.html" style="text-decoration:none"><li class="brand ">
+				About Us
+			</li></a>	
+			<a href="3ce.html" style="text-decoration:none">
+			<li class="brand ">
+				3CE
+			</li></a>
+			<a href="etudehouse.html" style="text-decoration:none">
+			<li class="brand et">
+				ETUDE HOUSE
+			</li></a>
+			<a href="memebox.html" style="text-decoration:none">
+			<li class="brand ">
+				MEMEBOX
+			</li></a>
+			<a href="clio.html" style="text-decoration:none">
+			<li class="brand ">
+				CLIO
+			</li></a>
+			<a href="romand.html" style="text-decoration:none">
+			<li class="brand rm">
+				Romand
+			</li></a>
+			
+		</ul>
+		<div class="people" id="people" >
+				訪客人數 : 7  <br>
+				現在時間:9:16PM
+			</div>
+		<div class="navright" id="navright">
+			
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="image/indexpic/user.png" class="user"></button>
+			  <div class="dropdown-content">
+			    <a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a>
+			    <a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+			    <a href="personal.html">我的帳戶</a>	
+			  </div>
+			</div>
+
+			<div id="id01" class="indexmodal"> 
+			  <form class="modal-content-index animate" action="/action_page.php" method="post" style="width:35%">
+			   	
+			      <span onclick="document.getElementById('id01').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="image/kbeauty.png" class="logomodal">
+			    	<div class="login">登入</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="textmodal" placeholder="Email/使用者名稱" name="uname" required>
+
+				      
+				      <input type="password" placeholder="密碼" name="psw" required>
+				        
+				      <button type="submit" class="loginbut" style="margin-right:15px" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none'">註冊</button>
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">登入</button>
+				    </div>
+			   
+			  </form>
+			</div>
+
+			<div id="id02" class="indexmodal"> 
+			  <form class="modal-content-index animate"  method="post" style="width:35%;margin-top:5%">
+			   	
+			      <span onclick="document.getElementById('id02').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="image/kbeauty.png" class="logomodal">
+			    	<div class="login">註冊</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="textmodal" placeholder="Email" name="uname" required>
+				      <input type="textmodal" placeholder="使用者帳號" name="uname" required>
+				      <input type="password" placeholder="密碼" name="psw" required>
+				      <input type="password" placeholder="確認密碼" name="uname" required>
+
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white" onclick="document.getElementById('id03').style.display='block';document.getElementById('id02').style.display='none'">註冊</button>
+					</div>
+			   
+			  </form>
+			</div>
+
+			<div id="id03" class="indexmodal "> 
+				<div class="sussce animate">				
+					<img src="image/duihao.png" class="duihao">	
+					<div>
+						註冊成功
+					</div>
+				</div>
+			</div>	
+		<script>
+			var modal = document.getElementById('id03');
+			window.onclick = function(event) {
+  			if (event.target == modal) {
+  			  modal.style.display = "none";
+			  }
+				}
+		</script>
+			
+			  <button class="shopping"><img src="image/indexpic/shopping-cart.png" class="user" onclick="openNav()"></button>
+
+			  <div id="mySidenav" class="sidenav">
+			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  	
+			  		<img src="image/indexpic/shopping-cart_black.png" class="carpic">購物車:
+			  		
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">5</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">5</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+					<a href="buy.html"> <button type="button" class="buybtn">結帳</button></a>
+
+
+				</div>
+			  <script>
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "350px";
+				 
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+
+				function deleteNav() {
+				  document.getElementById("carr").style.display = "none";
+				}
+				</script>
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="image/indexpic/loupe.png" class="user"></button>
+			  <div class="dropdown-content search">
+			    <input type="text" placeholder="Search.." class="inputsearch">
+			    <button class="searchbutton"><img src="image/indexpic/search.png" class="searchpic"></button>	
+			  </div>
+			</div>  
+	
+		</div>				
+	</div>
+	
+	<script>
+		
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		    document.getElementById("navbar").style.height = "80px";
+		    document.getElementById("navright").style.top = "1vh";
+		  	document.getElementById("logo").src = "image/indexpic/K-Beauty.png";
+		  	document.getElementById("logo").style.width = "230px";
+		  	document.getElementById("logo").style.height = "80px";		  	
+		  	document.getElementById("logo").style.float = "left";
+		  	document.getElementById("logo").style.margin = "0 0 0 20px";
+		  	document.getElementById("brandmove").style.margin = "25px 215px 0 0";
+		  	document.getElementById("people").style.top = "2vh";
+			document.getElementById("people").style.left = "77vw";
+		  } else {
+		    document.getElementById("navbar").style.height = "23.5vh";
+		    document.getElementById("navright").style.top = "16vh";
+		    document.getElementById("logo").src = "image/indexpic/K透.png";
+		    document.getElementById("logo").style.width = "8.3vw";
+		  	document.getElementById("logo").style.height = "17vh";
+		  	document.getElementById("logo").style.float = "none";
+		  	document.getElementById("logo").style.margin = "10px 0 7px 0";
+		  	document.getElementById("brandmove").style.margin = "0 auto 0 auto";
+		  	document.getElementById("people").style.top = "9vh";
+			document.getElementById("people").style.left = "85vw";
+		  }
+		}
+
+		     
+	</script>
+	<div style="padding-left:30px;padding-right:30px;margin-right:auto;margin-left:auto;width:1200px;">
+		<div class="logo">
+		<img src="image/5.png" >
+		</div>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner mx-auto">
+				<div class="carousel-item active">
+					<img src="image/romandpic1.jpg" class="d-block w-100" alt="...">
+				</div>
+   				<div class="carousel-item">
+					<img src="image/romandpic3.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="image/romandpic4.jpg" class="d-block w-100" alt="...">
+				</div>
+    			<div class="carousel-item">
+					<img src="image/romandpic5.jpg" class="d-block w-100" alt="...">
+				</div>
+    			<div class="carousel-item">
+					<img src="image/romandpic8.jpg" class="d-block w-100" alt="...">
+				</div>
+			</div>
+		</div>
+		<div class="s1">
+			<div style="height:25px;">
+				<table style="float:left;">
+			 		<tr>
+			 			
+		 				<td style="width:120px;"><a href="http://romand.co.kr/" class="nav02" target="_block">Official</a></td>
+		 				<td style="width:120px;"><a href="https://www.instagram.com/romandyou/" class="nav02" target="_block">Instagram</a></td>
+			 			<td style="width:120px;"><a href="https://www.facebook.com/romandyou" class="nav02" target="_block">Facebook</a></td>
+		 			</tr>
+				</table>
+			</div>
+			<hr class="no1">
+			<div id="product">
+				
+					<div class="w350" style="margin:0px 10.8px;">
+						<div>
+							<img src="image/romand/eye/small2.jpg" class="first">
+						</div>
+						<div>
+							<img src="image/romand/eye/small.jpg" class="second">
+						</div>
+						<p>ROMAND&nbsp;&nbsp;BETTER THAN EYES</p>
+						<p>NT$330</p>
+					</div>
+					<div class="w350" style="margin:0px 10.8px;">
+						<div>
+							<img src="image/romand/juicy/small2.jpg" class="first">
+						</div>
+						<div>
+							<img src="image/romand/juicy/small.jpg" class="second">
+						</div>
+						<p>ROMAND&nbsp;&nbsp;JUICY LASTING TINT</p>
+						<p>NT$199</p>
+					</div>
+					<div class="w350" style="margin:0px 10.8px;">
+						<div>
+							<img src="image/romand/shape/small2.jpg" class="first">
+						</div>
+						<div>
+							<img src="image/romand/shape/small.jpg" class="second">
+						</div>
+						<p>ROMAND&nbsp;&nbsp;BETTER THAN SHAPE</p>
+						<p>NT$229</p>
+					</div>
+				
+					<div class="w350" style="margin:0px 10.8px;">
+						<div>
+							<img src="image/romand/universe/small2.jpg" class="first">
+						</div>
+						<div>
+							<img src="image/romand/universe/small.jpg" class="second">
+						</div>
+						<p>ROMAND&nbsp;&nbsp;THE UNIVERSE GLITTER SHADOW/LIQUID</p>
+						<p>NT$200</p>
+					</div>
+					<div class="w350" style="margin:0px 10.8px;">
+						<div>
+							<img src="image/romand/zero_lipstick/small2.jpg" class="first">
+						</div>
+						<div>
+							<img src="image/romand/zero_lipstick/small.jpg" class="second">
+						</div>
+						<p>ROMAND&nbsp;&nbsp;ZERO MATTE LIPSTICK</p>
+						<p>NT$229</p>
+					</div>
+					<div class="w350" style="margin:0px 10.8px;">
+						<div>
+							<img src="image/romand/zero_velvet/small2.jpg" class="first">
+						</div>
+						<div>
+							<img src="image/romand/zero_velvet/small.jpg" class="second">
+						</div>
+						<p>ROMAND&nbsp;&nbsp;ZERO VELVET TINT</p>
+						<p>NT$200</p>
+					</div>
+				
+			</div>
+		</div>
+	</div>	
+
+	<footer>
+			<p></p>
+		<p>+886-987987987&nbsp;|&nbsp;<a href="mailto:k.beauty@gmail.com">k.beauty@gmail.com</a></p>
+		<p>© 2019 by gglai,yu-chen,chun-yen,brian</p>
+
+	</footer>
+</body>
+</html>

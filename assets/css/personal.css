@@ -1,0 +1,199 @@
+
+
+.tab2 {
+  float: left;
+  background-color:#FEEBEB;
+  width: 20%;
+  font-family:"微軟正黑體";
+  border-radius:5px;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab2 button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #D1B3B3;
+}
+.tab2 button:focus{
+	outline:none;
+}
+/* Create an active/current "tab button" class */
+.tab2 button.active {
+ 	background-color:  #A35353;
+  	color:#FFFFFF;
+  	font-weight:bolder;
+}
+
+/* Style the tab content */
+.tabcontent2 {
+  float: left;
+  padding: 30px; 
+  width:60%;
+  height:100%;
+  margin-left:2%;
+  background-color:white;
+  border-radius:5px;
+  font-family:"微軟正黑體";
+}
+.tabcontent2 h3{
+	color:#A35353;
+	font-weight:bolder;
+}
+
+.inputname{
+  width: 250px;
+  padding: 6px 10px;
+  display: inline-block;
+  border: 1px solid #A35353;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.inputname:focus{
+	outline:none;
+}
+select{
+  width: 80px;  
+  padding: 6px 10px;
+  display: inline-block;
+  border: 1px solid #A35353;
+  border-radius: 4px;
+}
+select:focus{
+	outline:none;
+}
+
+#List2{
+  background-color:#F3E6E6;
+  margin-bottom: 20px;
+  
+}
+.list-2{
+  padding:15px 15px 15px 15px;
+  height: 115px;
+  border-bottom: #A35353 solid 0.5px;
+  clear: both;
+}
+.buylistpic{
+  width: 85px;
+  float: left;
+}
+#Buylist2 p{
+  margin: 5px 0px;
+}
+.list-product2{
+  float: left;
+  margin-left:10px;
+  width: 500px;
+}
+.list-price2{
+  float: right;
+  padding-top:28px;
+}
+.list-price2 p{
+  font-size: 18px;
+}
+.list-totalprice2{
+  padding:5px 15px 10px 0px;
+}
+.list-totalprice2 p{
+  font-size: 22px;
+  text-align: right;
+ }
+#product2 p{
+  margin:5px 1px;
+  font-family:monospace;
+  position:relative;
+  top:227px;
+  font-size:1.15rem;
+}
+.w350person{
+  width: 227px;
+  height: 370px;
+  float: left;
+}
+.firstperson{
+  width:227px;
+  position:absolute;
+}
+.secondperson{
+  width:227px;
+  opacity:0;
+  position:absolute;
+}
+.secondperson:hover{
+  transition:0.4s;
+  opacity:1;
+}
+.save{
+	clear:both;
+	position:relative;
+	top:130px;
+	left:320px;
+	width:160px;
+	height:50px;
+	font-size:22px;
+	border-radius:10px;
+	background-color:#A35353;
+	color:white;
+	cursor:pointer;
+}
+.save:focus{
+	outline:none;
+}
+h3 img{
+	width:30px;
+	height:30px;
+	margin-top:-5px;
+}
+.tabpic{
+	width:20px;
+	height:20px;
+	margin-top:-5px;
+}
+.rewpic{
+  width:70px;
+  height:70px;
+  display:inline-block;
+  margin-top:-20px;
+  margin-left:10px;
+}
+.rewul{
+  display:inline-block;
+  list-style-type:none;
+  padding:0;
+  padding-left:20px;
+  padding-top:20px;
+}
+.rew{
+  border-bottom:1px solid #AAA;
+  position:relative;
+}
+.rewtxt{
+  display:inline-block;
+  margin-left:20px;
+  padding-left:10px;
+  position:relative;
+  top:0;
+  border-left:1px #AAA solid;
+  margin-top: 10px;
+  margin-bottom: 5px;
+} 
+.time{
+  position:absolute;
+  right:0;
+  bottom:0;
+}

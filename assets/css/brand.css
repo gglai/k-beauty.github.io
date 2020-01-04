@@ -1,0 +1,478 @@
+.logo{
+	width:1070px;
+	margin:26vh auto 20px auto;
+
+}
+
+.s1{
+	width:1070px;
+	height:800px;
+	margin:15px auto;
+	position:relative;
+}
+hr.no1 {
+	height:1px;
+	border:none;
+	border-top:1px solid #AAAAAA;
+	margin:18px auto 25px auto;
+}
+.nav02{
+	color:#555555;
+
+}
+.nav02:hover{
+	color:#A35353;
+	font-weight:bold;
+	text-decoration:none;
+}
+#product p{
+	margin:5px 1px ;
+
+	font-family:monospace;
+	position:relative;
+	top:335px;
+	font-size:1.15rem;
+}
+.w350{
+	width: 335px;
+	height: 410px;
+	float: left;
+	margin-bottom:10px;
+}
+.first{
+	width:335px;
+	position:absolute;
+}
+.second{
+	width:335px;
+	opacity:0;
+	position:absolute;
+}
+.second:hover{
+	transition:0.4s;
+	opacity:1;
+}
+.navv{	position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		background-color:#A35353;
+		text-align: center;	
+		box-shadow: 0px 0px 20px 4px rgba(0,0,0, 0.1);	
+		margin:auto;		
+		z-index: 99;	
+		transition: 0.3s;
+	}
+.weblogo{
+		height:17vh;
+		width: 8.3vw;
+		margin:10px 0 10px 0; 
+		}
+.brand{	font-family: monospace;
+		font-size: 18px;
+		color:#FFFFFF;			
+		display: inline;
+		border-right:1px #B2ACAC solid;
+		margin: 10px 15px 0px 15px;
+		padding-right:15px; 
+		transition: 0.3s;
+		}
+.brand:hover{
+		font-weight:bolder;
+		color:#F1ECC7;		
+}
+.et{	width: 165px;		
+		}
+.rm{	border-right:0;
+		}
+.cool{	margin-left: auto;
+		margin-right: auto;
+		
+		}
+.navright{		
+		position: absolute;
+		top:16vh;
+		left:85vw;
+		color:#FFFFFF;
+		font-family: "微軟正黑體";
+		transition: 0.3s;
+}
+.people{text-align: left;
+		position: absolute;
+		left:85vw; 
+		top:9vh;
+		color:white;
+		font-family:"微軟正黑體";
+		 }
+.user{	
+		width: 30px;
+		height: 30px;
+		}
+
+.dropbtn {
+		background-color:#A35353;
+  		padding: 16px;
+  		border:0;
+}
+
+.dropdown {
+  		position: relative;
+  		left:-15px;
+  		display: inline-block;
+}
+
+.dropdown-content {
+  		display: none;
+  		position: absolute;
+  		top:56px;
+  		left:-18px;
+  		min-width: 110px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		z-index: 1000;
+  		
+}
+.search{
+		background-color:#F3C9C9;
+		position: absolute;
+  		top:56px;
+  		left:-158px;
+		width:220px;
+		height:80px;
+		text-align:left;
+		padding-top:20px;
+		padding-left:15px;
+}
+.inputsearch{		
+		width:150px;
+		height:40px;
+}
+.searchpic{
+		width:20px;
+		height:20px;
+		display:inline;
+}
+.searchbutton{
+		width:40px;
+		height:40px;
+		position:relative;
+		left:-4px;		
+		background-color:#D7D7D7;
+		border:1px #B4B4B4 solid;
+}
+.searchbutton:hover{
+		background-color:#B4B4B4;
+}
+.dropdown-content a {
+		background-color:#F3C9C9;
+  		color: black;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+
+}
+
+.dropdown-content a:hover {
+		background-color: #D9C7C7;
+		text-decoration:none;
+		font-weight:bolder;}
+
+.dropdown:hover .dropdown-content {display: block;}
+.shopping{
+		position:relative;
+		left:-18px;
+		display: inline-block;
+		background-color:#A35353;
+		border:0;
+}
+.sidenav {
+  		height: 100%;
+  		width: 0;
+  		position: fixed;
+  		z-index: 100;
+  		top: 0;
+  		right: 0;
+  		background-color:#FFE5E5;
+  		overflow-x: hidden;
+  		transition: 0.5s;
+  		padding-top: 30px;
+  		color:black;
+  		font-size:22px;
+}
+.carpic  {	
+		width:25px;
+		height:25px;
+		margin-top:-6px;}
+.car{	width:280px;
+		height:150px;
+		background-color:#DDD1D1;
+		margin:20px auto 30px auto;
+		box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.3);
+		display:block;
+		position:relative;
+
+	}
+.itempicdiv{
+		float:left;
+		margin-top:25px;
+		margin-left:15px;
+		margin-right:15px;
+		width:100px;
+		height:100px;
+		position:relative;
+	}
+.itempic{
+		width:100px;
+		height:100px;
+}
+.car_item{
+		font-size:20px;
+		padding:25px ;
+}
+.badge1 {
+ 	 	position: absolute;
+  		top: -10px;
+  		right: -10px;
+  		width:30px;
+  		height:30px;
+  		border-radius:50%;
+  		background: red;
+  		color: white;
+  		font-size:20px;
+}
+.close{	position:absolute;
+  		top: 0;
+  		right: 5px; 
+
+} 
+.sidenav a {
+  		padding: 8px 8px 8px 32px;
+  		text-decoration: none;
+  		font-size: 25px;
+  		display: block;
+  		transition: 0.3s;
+  		color: #818181;
+}
+.closebtn :hover {
+  		color: #A35353;
+}
+.sidenav .closebtn {
+  		position: absolute;
+  		top: 0;
+  		right: 25px;
+  		font-size: 36px;
+  		margin-left: 50px;
+}
+.indexmodal {
+ 		display: none; 
+  		position: fixed; 
+  		z-index: 1; 
+  		left: 0;
+  		top: 0;
+  		width: 100%; 
+  		height: 100%;		 
+  		overflow: auto; 
+  		background-color: rgb(0,0,0); 
+  		background-color: rgba(0,0,0,0.4); 
+  		overflow: hidden;
+
+}
+.modal-content-index {
+  		background-color: #FFE1E1;
+  		margin: 10% auto 15% auto; 
+  		border: 1px solid #888;
+  		position:relative;
+  		border-radius:20px;
+  		box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.3);
+}
+.animate {
+  		-webkit-animation: animatezoom 0.6s;
+  		animation: animatezoom 0.6s
+}
+.login{	color:#A35353;
+		font-size:27px;
+		margin-top:10px ;
+		font-weight:bolder;}
+.logomodal{
+		width:100px;
+		height:100px;
+		margin:20px auto 0 auto;
+}
+input[type=textmodal], input[type=password] {
+  		width: 83%;
+  		padding: 12px 20px;
+ 		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #A35353;
+ 	 	box-sizing: border-box;
+}
+.closemodal{
+		position: absolute;
+  		right: 25px;
+  		top: 0;
+  		color: #000;
+ 		font-size: 40px;
+  		font-weight: bold;	
+}
+.closemodal:hover,
+.closemodal:focus {
+  		color: red;
+  		cursor: pointer;
+}
+.container_modal {
+  		padding: 15px;
+  		color:black;
+  		
+}
+.loginbut{
+		background-color: #FDFFB3;
+  		color: #392A80;
+  		font-size:24px;
+  		padding: 5px;
+  		border: none;
+  		cursor: pointer;
+  		width: 40%;
+  		margin:30px auto 10px auto;
+  		display:inline-block;
+  		font-weight:bolder;
+  		border-radius:20px;
+}
+.loginbut:hover{
+		opacity: 0.8;
+}
+.sussce{  
+  		margin: 15% auto 15% auto;
+  		border: 1px solid #888;
+  		border-radius:20px;
+  		width: 15%; 
+  		height: 22%;
+  		background-color: #FFE1E1;
+  		color:#A35353;
+  		font-size:22px;
+  		font-weight:bolder;
+  		position: relative;
+}
+.duihao{width:100px;
+		height:100px;
+		
+	}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {	-webkit-transform: scale(1)}
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #AC7A7A; 
+}
+::-webkit-scrollbar-thumb {
+  background:#DFBDBD; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#C0B1B7; 
+}
+
+.modalbrand {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+.modal2-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 650px;
+  padding: 30px auto;
+}
+.imgcontainer2 {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.close2 {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: red;
+  cursor: pointer;
+}
+
+footer{
+	background-color: #777777;
+	height:90px;
+	color: #EFEFEF;
+	padding: 15px 15px;
+	font-size: 14px;
+	font-family: 微軟正黑體;
+	margin-top:150px;
+}
+footer p{
+	text-align: center;
+	line-height:8px;
+}
+footer a{
+	color: #EFEFEF;
+	text-decoration: none;
+}
+footer a:hover{
+	font-weight: bold;
+	text-decoration: none;
+	color: #EFEFEF;}
+
+#id3ce h2{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-family:monospace;
+  font-size: 30px;
+
+}
+#id3ce h3{
+  text-align: center;
+  font-family:monospace,微軟正黑體;
+  font-size: 22px;
+}
+#id3ce p{
+  text-align: center;
+  font-family:微軟正黑體;
+  font-size: 14px;
+}
+.buybtn{width:200px;
+		height:60px;
+		position:relative;
+		margin-bottom:20px;
+		cursor:pointer;
+		background-color:#A35353;
+		color:#FFFFFF;
+		border:0;
+		border-radius:5px;
+		box-shadow:4px 4px 5px #AAA;
+	}
+.buybtn:hover{
+		background-color:#673232;
+		font-weight:bolder;
+}
+.buybtn:focus
+{
+		outline:none;
+}
+.buybtn:active{
+		transform:translateY(3px);
+}

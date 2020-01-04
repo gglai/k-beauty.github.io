@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的帳戶</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/personal.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body style="background-color:#F3C9C9;" >
+	
+	<div class=navv>		
+			<div>
+				<a href="index.html"><img src="image/indexpic/K透.png" class="logo"></a>
+			</div>
+		<ul class="cool">
+			<a href="aboutus.html" style="text-decoration:none"><li class="brand ">
+				About Us
+			</li></a>	
+			<a href="3ce.html" style="text-decoration:none">
+			<li class="brand ">
+				3CE
+			</li></a>
+			<a href="etudehouse.html" style="text-decoration:none">
+			<li class="brand et">
+				ETUDE HOUSE
+			</li></a>
+			<a href="memebox.html" style="text-decoration:none">
+			<li class="brand ">
+				MEMEBOX
+			</li></a>
+			<a href="clio.html" style="text-decoration:none">
+			<li class="brand ">
+				CLIO
+			</li></a>
+			<a href="romand.html" style="text-decoration:none">
+			<li class="brand rm">
+				Romand
+			</li></a>
+			
+		</ul>
+		<div class="people">
+				訪客人數 : 7 <br>
+				現在時間:9:16PM
+			</div>
+		<div class="navright" >
+			
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="image/indexpic/user.png" class="user"></button>
+			  <div class="dropdown-content">
+			    <a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a>
+			    <a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+			    <a href="personal.html">我的帳戶</a>		
+			  </div>
+			</div>
+
+			<div id="id01" class="indexmodal"> 
+			  <form class="modal-content-index animate" action="/action_page.php" method="post" style="width:35%">
+			   	
+			      <span onclick="document.getElementById('id01').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="image/kbeauty.png" class="logomodal">
+			    	<div class="login">登入</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="textmodal" placeholder="Email/使用者名稱" name="uname" required>
+
+				      
+				      <input type="password" placeholder="密碼" name="psw" required>
+				        
+				      <button type="submit" class="loginbut" style="margin-right:15px" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none'">註冊</button>
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">登入</button>
+				    </div>
+			   
+			  </form>
+			</div>
+
+			<div id="id02" class="indexmodal"> 
+			  <form class="modal-content-index animate"  method="post" style="width:35%;margin-top:5%">
+			   	
+			      <span onclick="document.getElementById('id02').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="image/kbeauty.png" class="logomodal">
+			    	<div class="login">註冊</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="textmodal" placeholder="Email" name="uname" required>
+				      <input type="textmodal" placeholder="使用者帳號" name="uname" required>
+				      <input type="password" placeholder="密碼" name="psw" required>
+				      <input type="password" placeholder="確認密碼" name="uname" required>
+
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">註冊</button>
+					</div>
+			   
+			  </form>
+			</div>
+
+			<div id="id03" class="indexmodal "> 
+				<div class="sussce animate">				
+					<img src="image/duihao.png" class="duihao">	
+					<div>
+						註冊成功
+					</div>
+				</div>
+			</div>	
+		<script>
+			
+			var modal = document.getElementById('id03');
+			window.onclick = function(event) {
+  			if (event.target == modal) {
+  			  modal.style.display = "none";
+			  }
+				}
+		</script>
+			
+			  <button class="shopping"><img src="image/indexpic/shopping-cart.png" class="user" onclick="openNav()"></button>
+
+			  <div id="mySidenav" class="sidenav">
+			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  	
+			  		<img src="image/indexpic/shopping-cart_black.png" class="carpic">購物車:
+			  		
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">1</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">2</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">3</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+
+
+					<a href="buy.html"> <button type="button" class="buybtn">結帳</button></a>
+
+
+				</div>
+			  <script>
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "350px";
+				 
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+
+				function deleteNav() {
+				  document.getElementById("carr").style.display = "none";
+				}
+				</script>
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="image/indexpic/loupe.png" class="user"></button>
+			  <div class="dropdown-content search">
+			    <input type="text" placeholder="Search.." class="inputsearch">
+			    <button class="searchbutton"><img src="image/indexpic/search.png" class="searchpic"></button>	
+			  </div>
+			</div>  
+	
+		</div>				
+	</div>
+	<div class="buy" style="overflow:hidden;width:70%;">
+		<div class="tab2">
+			<div style="padding:20px 20px 0 20px">
+				<img src="image/girl.png" style="width:50px; border-radius:50%; float: left;">
+				<p style="float: left; padding-left:15px;">Selina<br>會員編號:</p>
+
+				<div style="clear: both;"></div>
+			</div>
+
+			<button class="tablinks" onclick="openCity(event, 'Profile')" id="defaultOpen">個人檔案
+				<img src="image/customer.png" class="tabpic">
+			</button>
+
+			<button class="tablinks" onclick="openCity(event, 'Buylist2')">訂單查詢
+				<img src="image/clipboard.png" class="tabpic">
+			</button>
+
+			<button class="tablinks" onclick="openCity(event, 'Favorite')" style="border-radius:0 0 5px 5px">我的收藏
+				<img src="image/favorite.png" class="tabpic">
+			</button>
+
+			<button class="tablinks" onclick="openCity(event, 'Coment')" style="border-radius:0 0 5px 5px">評論紀錄
+				<img src="image/writing2.png" class="tabpic">
+			</button>
+		</div>
+		<div id="Profile" class="tabcontent2">
+			<form>
+				<div style="width: 100%; margin-bottom:15px;border-bottom:#A35353 0.5px solid;">
+					<h3>個人檔案
+						<img src="image/customer2.png">
+					</h3>
+				</div>	
+				<div style="float:left">
+							
+					<p>用戶名稱</p>											
+					<input type="text" name="name" class="inputname">						
+					<p></p>
+					<p>Email</p>
+					<input type="text" name="name" class="inputname">						
+					<p></p>
+					<p>手機號碼</p>
+					<input type="text" name="name" class="inputname">
+					<p></p>
+					<p>性別</p>
+					<input type="radio" name="gender" value="male" checked>男生
+					<input type="radio" name="gender" value="female">女生
+					<p></p>
+					<p>生日</p>
+					<select name="year">
+								<option value="2020">2020</option>
+								<option value="2019">2019</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
+								<option value="2011">2011</option>
+								<option value="2010">2010</option>
+								<option value="2009">2009</option>
+								<option value="2008">2008</option>
+								<option value="2007">2007</option>
+								<option value="2006">2006</option>
+								<option value="2005">2005</option>
+								<option value="2004">2004</option>
+								<option value="2003">2003</option>
+								<option value="2002">2002</option>
+								<option value="2001">2001</option>
+								<option value="2000">2000</option>
+								<option value="1998">1998</option>
+								<option value="1997">1997</option>
+								<option value="1996">1996</option>
+								<option value="1995">1995</option>
+								<option value="1994">1994</option>
+								<option value="1993">1993</option>
+								<option value="1992">1992</option>
+								<option value="1991">1991</option>
+								<option value="1990">1990</option>
+								<option value="1989">1989</option>
+								<option value="1988">1988</option>
+								<option value="1987">1987</option>
+								<option value="1986">1986</option>
+								<option value="1985">1985</option>
+								<option value="1984">1984</option>
+								<option value="1983">1983</option>
+								<option value="1982">1982</option>
+								<option value="1981">1981</option>
+								<option value="1980">1980</option>
+								<option value="1979">1979</option>
+								<option value="1978">1978</option>
+								<option value="1977">1977</option>
+								<option value="1976">1976</option>
+								<option value="1975">1975</option>
+								<option value="1974">1974</option>
+								<option value="1973">1973</option>
+								<option value="1972">1972</option>
+								<option value="1971">1971</option>
+								<option value="1970">1970</option>
+								<option value="1969">1969</option>
+								<option value="1968">1968</option>
+								<option value="1967">1967</option>
+								<option value="1966">1966</option>
+								<option value="1965">1965</option>
+								<option value="1964">1964</option>
+								<option value="1963">1963</option>
+								<option value="1962">1962</option>
+								<option value="1961">1961</option>
+								<option value="1960">1960</option>
+								<option value="1959">1959</option>
+								<option value="1958">1958</option>
+								<option value="1957">1957</option>
+								<option value="1956">1956</option>
+								<option value="1955">1955</option>
+								<option value="1954">1954</option>
+								<option value="1953">1953</option>
+								<option value="1952">1952</option>
+								<option value="1951">1951</option>
+								<option value="1950">1950</option>
+								<option value="1949">1949</option>
+								<option value="1948">1948</option>
+								<option value="1947">1947</option>
+								<option value="1946">1946</option>
+								<option value="1945">1945</option>
+								<option value="1944">1944</option>
+								<option value="1943">1943</option>
+								<option value="1942">1942</option>
+								<option value="1941">1941</option>
+								<option value="1940">1940</option>
+								<option value="1939">1939</option>
+								<option value="1938">1938</option>
+								<option value="1937">1937</option>
+								<option value="1936">1936</option>
+								<option value="1935">1935</option>
+								<option value="1934">1934</option>
+								<option value="1933">1933</option>
+								<option value="1932">1932</option>
+								<option value="1931">1931</option>
+								<option value="1930">1930</option>
+								<option value="1929">1929</option>
+								<option value="1928">1928</option>
+								<option value="1927">1927</option>
+								<option value="1926">1926</option>
+								<option value="1925">1925</option>
+								<option value="1924">1924</option>
+								<option value="1923">1923</option>
+								<option value="1922">1922</option>
+								<option value="1921">1921</option>
+								<option value="1920">1920</option>
+								<option value="1919">1919</option>
+								<option value="1918">1918</option>
+								<option value="1917">1917</option>
+								<option value="1916">1916</option>
+								<option value="1915">1915</option>
+								<option value="1914">1914</option>
+								<option value="1913">1913</option>
+								<option value="1912">1912</option>
+								<option value="1911">1911</option>
+								<option value="1910">1910</option>
+								<option value="1909">1909</option>
+								<option value="1908">1908</option>
+								<option value="1907">1907</option>
+								<option value="1906">1906</option>
+								<option value="1905">1905</option>
+								<option value="1904">1904</option>
+								<option value="1903">1903</option>
+								<option value="1902">1902</option>
+								<option value="1901">1901</option>
+								<option value="1900">1900</option>
+							</select>
+							<select name="month">
+								<option value="一月">一月</option>
+								<option value="二月">二月</option>
+								<option value="三月">三月</option>
+								<option value="四月">四月</option>
+								<option value="五月">五月</option>
+								<option value="六月">六月</option>
+								<option value="七月">七月</option>
+								<option value="八月">八月</option>
+								<option value="九月">九月</option>
+								<option value="十月">十月</option>
+								<option value="十一月">十一月</option>
+								<option value="十二月">十二月</option>
+							</select>
+							<select name="day">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
+						<p></p>
+			
+						</div>	
+						<div style="float:left;margin-left:80px">
+							<p>密碼</p>
+							<input type="text" name="password" class="inputname">
+							<br>
+							<p></p>
+							<p>確認密碼</p>
+							<input type="text" name="password" class="inputname">
+							<br>
+							<p></p>
+							<p>地址</p>
+							<input type="text" name="address" class="inputname" style="width:400px">
+						</div>
+
+						<button type="submit" class="save">儲存</button>
+			</form>
+		</div>
+		<div id="Buylist2" class="tabcontent2">
+			<div style="width: 100%; margin-bottom:15px;border-bottom:#A35353 0.5px solid;">
+				<h3>訂單查詢
+					<img src="image/clipboard2.png">
+				</h3>
+			</div>
+			<div id="List2">
+				<div class="list-2">
+					<div>
+						<img src="image/3ce/cloud_lip/small.jpg" class="buylistpic">
+						<div class="list-product2">
+							<p>3CE CLOUD LIP TINT KIT</p>
+							<p>色號：#ACTIVE LADY</p>
+							<p>×1</p>
+						</div>
+						<div class="list-price2">
+							<p>$450</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-2">				
+					<div>
+						<img src="image/etudehouse/bake/small.jpg" class="buylistpic">
+						<div class="list-product2">
+							<p>ETUDE HOUSE 香醇烘焙麵包屋眼彩盤</p>
+							<p>色號：#Bake House</p>
+							<p>×1</p>
+						</div>
+						<div class="list-price2">
+							<p>$700</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-totalprice2">
+					<div style="float:left; padding-left:15px;font-size:20px;font-weight:bolder">訂單狀態：出貨中
+					</div>
+					<p style="font-size:18px">運費:+0</p>
+					<p>$1150</p>
+				</div>
+			</div>
+			<div id="List2">
+				<div class="list-2">
+					<div>
+						<img src="image/etudehouse/lasting/small.jpg" class="buylistpic">
+						<div class="list-product2">
+							<p>ETUDE HOUSE 長效待肌光澤透顏精華粉底 Double Lasting</p>
+							<p>色號：#Neutral Vanilla</p>
+							<p>×2</p>
+						</div>
+						<div class="list-price2">
+							<p>$650</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-totalprice2">
+					<div style="float:left; padding-left:15px;font-size:20px;font-weight:bolder">訂單狀態：已完成
+					</div>
+					<p style="font-size:18px">運費:+0</p>
+					<p>$1300</p>
+				</div>
+			</div>
+		</div>
+		<div id="Favorite" class="tabcontent2">
+			<div style="width: 100%; margin-bottom:15px;border-bottom:#A35353 0.5px solid;">
+				<h3>我的收藏
+					<img src="image/favorite2.png">
+				</h3>
+			</div>
+			<div id="product2">
+				<div >
+					<div class="w350person" style="margin-right:1.5vw">
+						<div>
+							<img src="image/3ce/eye_switch_pot/small2.jpg" class="firstperson">
+						</div>
+						<div>
+							<img src="image/3ce/eye_switch_pot/small.jpg" class="secondperson">
+						</div>
+						<p>3CE&nbsp;&nbsp;EYE SWITCH POT</p>
+						<p>NT$550</p>
+					</div>
+					<div class="w350person" style="margin-right:1.5vw">
+						<div>
+							<img src="image/3ce/mini/small2.jpg" class="firstperson">
+						</div>
+						<div>
+							<img src="image/3ce/mini/small.jpg" class="secondperson">
+						</div>
+						<p>3CE&nbsp;&nbsp;MINI MULTI EYE COLOR PALETTE</p>
+						<p>NT$750</p>
+					</div>
+					<div class="w350person">
+						<div>
+							<img src="image/3ce/mood/small2.jpg" class="firstperson">
+						</div>
+						<div>
+							<img src="image/3ce/mood/small.jpg" class="secondperson">
+						</div>
+						<p>3CE&nbsp;&nbsp;MOOD RECIPE MULTI EYE COLOR PALETTE</p>
+						<p>NT$1200</p>
+					</div>
+				</div>
+				<div>
+					<div class="w350person" style="margin-right:1.5vw">
+						<div>
+							<img src="image/3ce/layer/small2.jpg" class="firstperson">
+						</div>
+						<div>
+							<img src="image/3ce/layer/small.jpg" class="secondperson">
+						</div>
+						<p>3CE&nbsp;&nbsp;LAYER COVERING STICK FOUNDATION</p>
+						<p>NT$1000</p>
+					</div>
+					<div class="w350person" style="margin-right:1.5vw">
+						<div>
+							<img src="image/3ce/cloud_lip/small2.jpg" class="firstperson">
+						</div>
+						<div>
+							<img src="image/3ce/cloud_lip/small.jpg" class="secondperson">
+						</div>
+						<p>3CE&nbsp;&nbsp;CLOUD LIP TINT KIT</p>
+						<p>NT$450</p>
+					</div>
+					<div class="w350person">
+						<div>
+							<img src="image/3ce/red_recipe_lip/small2.jpg" class="firstperson">
+					</div>
+						<div>
+							<img src="image/3ce/red_recipe_lip/small.jpg" class="secondperson">
+						</div>
+						<p>3CE&nbsp;&nbsp;RED RECIPE LIP COLOR</p>
+						<p>NT$560</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Coment" class="tabcontent2">
+			<div style="width: 100%; margin-bottom:5px;border-bottom:#A35353 0.5px solid;">
+				<h3>評論紀錄
+					<img src="image/writing3.png">
+				</h3>
+			</div>
+			<div id="coment2">
+				<div class="rew">
+					<ul class="rewul">
+						<li>Selina</li>
+						<li>★★★★☆</li>
+					</ul>
+					<div class="rewtxt" >
+						<h5>商品名稱:3CE EYE_SWITCH_POT</h5>
+						<h4>TITLE</h4>
+						<p>還好還好還好</p>
+					</div>
+					<p class="time">2019/12/22</p>
+				</div>
+				<div class="rew">
+					<ul class="rewul">
+						<li>Selina</li>
+						<li>★★★★★</li>
+					</ul>
+					<div class="rewtxt">
+						<h5>商品名稱:3CE_CLOUD LIP TINT KIT</h5>
+						<h4>TITLE</h4>
+						<p>好棒棒</p>
+					</div>
+					<p class="time">2019/12/22</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function openCity(evt, cityName) {
+	  		var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent2");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+  			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>	
+
+	<footer style="margin-top:20px">
+		<p></p>
+		<p>+886-987987987&nbsp;|&nbsp;<a href="mailto:k.beauty@gmail.com">k.beauty@gmail.com</a></p>
+		<p>© 2019 by gglai,yu-chen,chun-yen,brian</p>
+
+	</footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理者介面</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/manager.css">
+</head>
+<body class="body">
+	<div class=navv>		
+			<div>
+				<a href="index.html"><img src="image/indexpic/K透.png" class="logo"></a>
+			</div>
+	</div>
+	<div style="width:900px;margin:10px auto;">
+		<div class="tabb">
+			<div style="text-align: center;">
+				<p style="font-size:22px;font-weight:bolder">管理者介面</p>
+			</div>
+			<button class="tablinks" onclick="openCity(event, 'Stock')" id="defaultOpen">庫存資料</button>
+			<button class="tablinks" onclick="openCity(event, 'Add')">增加商品</button>
+			<button class="tablinks" onclick="openCity(event, 'Modify')">修改商品</button>
+			<button class="tablinks" onclick="openCity(event, 'Delete')">刪除商品</button>
+		</div>
+		<div id="Stock" class="tabcontentt">
+			<div style="width: 100%; margin-bottom:15px;border-bottom:#CCC 0.5px solid;">
+				<h3>庫存資料</h3>
+			</div>
+			<div>
+				<table>
+					<tr>
+						<td class="aa">1</td>
+						<td class="bb">1</td>
+					</tr>
+					<tr>
+						<td class="aa">2</td>
+						<td class="bb">2</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Add" class="tabcontentt">
+			<div style="width: 100%; margin-bottom:15px;border-bottom:#CCC 0.5px solid;">
+				<h3>增加商品</h3>
+			</div>
+			<div>
+				<form name="Addproduct">
+					<table>
+						<tr>
+							<td class="aa">編碼</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">商品名稱</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">價格</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">商品資訊</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+						<tr>
+							<td class="aa">商品數量</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">類別</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">圖檔位置</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">圖檔名稱</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+							<td colspan="2">
+								<div style=" width: 92px; margin: auto; padding-top: 15px;">
+									<input type="button" name="add" value="增加">
+									<input type="button" name="addclean" value="清除">
+								</div>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="Modify" class="tabcontentt">
+			<div style="width: 100%; margin-bottom:15px;border-bottom:#CCC 0.5px solid;">
+				<h3>修改商品</h3>
+			</div>
+			<div>
+				<form name="Modifyproduct">
+					<table>
+						<tr>
+							<td class="aa">編碼</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">商品名稱</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">價格</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">商品資訊</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td class="aa">商品數量</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div style=" width: 92px; margin: auto; padding-top: 15px;">
+									<input type="button" name="modify" value="修改">
+									<input type="button" name="modifyclean" value="清除">
+								</div>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="Delete" class="tabcontentt">
+			<div style="width: 100%; margin-bottom:15px;border-bottom:#CCC 0.5px solid;">
+				<h3>刪除商品</h3>
+			</div>
+			<div>
+				<form name="Deleteproduct">
+					<table>
+						<tr>
+							<td class="aa">編碼</td>
+							<td class="bb"><input type="text" name=""></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div style=" width: 92px; margin: auto; padding-top: 15px;">
+									<input type="button" name="delete" value="刪除">
+									<input type="button" name="deleteclean" value="清除">
+								</div>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		function openCity(evt, cityName) {
+	  		var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontentt");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+  			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>	
+</body>
+</html>

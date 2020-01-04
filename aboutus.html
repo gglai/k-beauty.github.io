@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body class="body">
+	<div class=navv>		
+			<div>
+				<a href="index.html"><img src="image/indexpic/K透.png" class="logo"></a>
+			</div>
+		<ul class="cool">
+			<a href="aboutus.html" style="text-decoration:none"><li class="brand ">
+				About Us
+			</li></a>	
+			<a href="3ce.html" style="text-decoration:none">
+			<li class="brand ">
+				3CE
+			</li></a>
+			<a href="etudehouse.html" style="text-decoration:none">
+			<li class="brand et">
+				ETUDE HOUSE
+			</li></a>
+			<a href="memebox.html" style="text-decoration:none">
+			<li class="brand ">
+				MEMEBOX
+			</li></a>
+			<a href="clio.html" style="text-decoration:none">
+			<li class="brand ">
+				CLIO
+			</li></a>
+			<a href="romand.html" style="text-decoration:none">
+			<li class="brand rm">
+				Romand
+			</li></a>
+			
+		</ul>
+		<div class="people">
+				訪客人數 : 7 <br>
+				現在時間:9:16PM
+			</div>
+		<div class="navright">
+			
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="image/indexpic/user.png" class="user"></button>
+			  <div class="dropdown-content">
+			    <a href="#" onclick="document.getElementById('id01').style.display='block'" >登入</a>
+			    <a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+			    <a href="personal.html">我的帳戶</a>	
+			  </div>
+			</div>
+
+			<div id="id01" class="indexmodal" style="overflow:hidden"> 
+			  <form class="modal-content-index animate" action="/action_page.php" method="post" style="width:35%">
+			   	
+			      <span onclick="document.getElementById('id01').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="image/kbeauty.png" class="logomodal">
+			    	<div class="login">登入</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="text" placeholder="Email/使用者名稱" name="uname" required class="indexinput">
+
+				      
+				      <input type="password" placeholder="密碼" name="psw" required class="indexinput">
+				        
+				      <button type="submit" class="loginbut" style="margin-right:15px" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none'">註冊</button>
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">登入</button>
+				    </div>
+			   
+			  </form>
+			</div>
+
+			<div id="id02" class="indexmodal"> 
+			  <form class="modal-content-index animate"  method="post" style="width:35%;margin-top:5%">
+			   	
+			      <span onclick="document.getElementById('id02').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="image/kbeauty.png" class="logomodal">
+			    	<div class="login">註冊</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="text" placeholder="使用者帳號" name="id" required class="indexinput">
+				      <input type="password" placeholder="密碼" name="password" required class="indexinput">
+					  <input type="password" placeholder="確認密碼" name="recheckpassword" required class="indexinput">
+					  <input type="text" placeholder="名字" name="name" required class="indexinput">
+					  <input type="text" placeholder="Email" name="email" required class="indexinput"><br>
+					  性別:&nbsp;&nbsp;<input type="radio" name="sex" value="male" required>男
+					  <input type="radio" name="sex" value="female" required>女
+					  &nbsp;&nbsp;生日:&nbsp;&nbsp;<input type="date" placeholder="生日" name="date" required>
+					  <input type="text" placeholder="電話" name="tel" required class="indexinput">
+					  <input type="text" placeholder="地址" name="address" required class="indexinput">
+
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">註冊</button>
+					</div>
+			   
+			  </form>
+			</div>
+
+			<div id="id03" class="indexmodal "> 
+				<div class="sussce animate">				
+					<img src="image/duihao.png" class="duihao">	
+					<div>
+						註冊成功
+					</div>
+				</div>
+			</div>	
+		<script>
+			
+			var modal = document.getElementById('id03');
+			window.onclick = function(event) {
+  			if (event.target == modal) {
+  			  modal.style.display = "none";
+			  }
+				}
+		</script>
+			
+			  <button class="shopping"><img src="image/indexpic/shopping-cart.png" class="user" onclick="openNav()"></button>
+
+			  <div id="mySidenav" class="sidenav">
+			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  	
+			  		<img src="image/indexpic/shopping-cart_black.png" class="carpic">購物車:
+			  		
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">1</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">2</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">3</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+
+
+					<a href="buy.html"> <button type="button" class="buybtn">結帳</button></a>
+
+
+				</div>
+			  <script>
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "350px";
+				 
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+
+				function deleteNav() {
+				  document.getElementById("carr").style.display = "none";
+				}
+				</script>
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="image/indexpic/loupe.png" class="user"></button>
+			  <div class="dropdown-content search">
+			    <input type="text" placeholder="Search.." class="inputsearch">
+			    <button class="searchbutton"><img src="image/indexpic/search.png" class="searchpic"></button>	
+			  </div>
+			</div>  
+	
+		</div>				
+	</div>
+	<div class="intro">
+		<img src="image/kbeauty.png" style="width:200px;height:200px;margin:10px">
+		<br>
+		<div class="member">
+		<p>K-Beauty</p>
+		<p>取自Korea的K，加上Beauty美麗</p>
+		<p>以賣韓系化妝品為主，期望每個顧客都能更美麗更耀眼</p>
+		<p>*所有商品及圖片皆取自各家官網</p>
+		</div>
+		<div class="gbg">
+			組員介紹
+		</div>
+		<div class="member">
+			<img src="image/member/gglai.jpg" style="width:400px;height:500px">
+			<p></p>
+			<p>姓名：賴柔君(gglai)</p>
+			<p>負責項目：前端</p>
+		</div>
+		<div class="member">
+			<img src="image/member/cy.jpg" style="width:512px;height:340px">
+			<p></p>
+			<p>姓名：林君諺</p>
+			<p>負責項目：前端</p>
+		</div>
+		<div class="member">
+			<img src="image/member/ya.jpg" style="width:400px;height:500px">
+			<p></p>
+			<p>姓名：葉力嘉</p>
+			<p>負責項目：0</p>
+		</div>
+		<div class="member" style="margin-bottom:20px">
+			<img src="image/member/nt.jpg" style="width:380px;height:500px;">
+			<p></p>
+			<p>姓名：劉昱辰</p>
+			<p>負責項目：後端</p>
+		</div>
+	</div>
+
+
+
+
+
+	<footer>
+		<p></p>
+		<p>+886-987987987&nbsp;|&nbsp;<a href="mailto:k.beauty@gmail.com">k.beauty@gmail.com</a></p>
+		<p>© 2019 by gglai,yu-chen,chun-yen,brian</p>
+
+	</footer>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>結帳</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="assets/css/flow.css" rel="stylesheet" type="text/css" >
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/flow.js"></script> 
+</head>
+<body class="body">
+	<div class=navv>		
+			<div>
+				<a href="index.html"><img src="image/indexpic/K透.png" class="logo"></a>
+			</div>
+		<ul class="cool">
+			<a href="aboutus.html" style="text-decoration:none"><li class="brand ">
+				About Us
+			</li></a>	
+			<a href="3ce.html" style="text-decoration:none">
+			<li class="brand ">
+				3CE
+			</li></a>
+			<a href="etudehouse.html" style="text-decoration:none">
+			<li class="brand et">
+				ETUDE HOUSE
+			</li></a>
+			<a href="memebox.html" style="text-decoration:none">
+			<li class="brand ">
+				MEMEBOX
+			</li></a>
+			<a href="clio.html" style="text-decoration:none">
+			<li class="brand ">
+				CLIO
+			</li></a>
+			<a href="romand.html" style="text-decoration:none">
+			<li class="brand rm">
+				Romand
+			</li></a>
+			
+		</ul>
+		<div class="people">
+				訪客人數 : 7 <br>
+				現在時間:9:16PM
+			</div>
+		<div class="navright" >
+			
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="image/indexpic/user.png" class="user"></button>
+			  <div class="dropdown-content">
+			    <a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a>
+			    <a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+			    <a href="personal.html">我的帳戶</a>	
+			  </div>
+			</div>
+
+			<div id="id01" class="indexmodal"> 
+			  <form class="modal-content-index animate" action="/action_page.php" method="post" style="width:35%">
+			   	
+			      <span onclick="document.getElementById('id01').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="image/kbeauty.png" class="logomodal">
+			    	<div class="login">登入</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="textmodal" placeholder="Email/使用者名稱" name="uname" required>
+
+				      
+				      <input type="password" placeholder="密碼" name="psw" required>
+				        
+				      <button type="submit" class="loginbut" style="margin-right:15px" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none'">註冊</button>
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">登入</button>
+				    </div>
+			   
+			  </form>
+			</div>
+
+			<div id="id02" class="indexmodal"> 
+			  <form class="modal-content-index animate"  method="post" style="width:35%;margin-top:5%">
+			   	
+			      <span onclick="document.getElementById('id02').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="image/kbeauty.png" class="logomodal">
+			    	<div class="login">註冊</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="textmodal" placeholder="Email" name="uname" required>
+				      <input type="textmodal" placeholder="使用者帳號" name="uname" required>
+				      <input type="password" placeholder="密碼" name="psw" required>
+				      <input type="password" placeholder="確認密碼" name="uname" required>
+
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white" onclick="document.getElementById('id03').style.display='block';document.getElementById('id02').style.display='none'">註冊</button>
+					</div>
+			   
+			  </form>
+			</div>
+
+			<div id="id03" class="indexmodal "> 
+				<div class="sussce animate">				
+					<img src="image/duihao.png" class="duihao">	
+					<div>
+						註冊成功
+					</div>
+				</div>
+			</div>	
+		<script>
+			var modal = document.getElementById('id03');
+			window.onclick = function(event) {
+  			if (event.target == modal) {
+  			  modal.style.display = "none";
+			  }
+				}
+		</script>
+			
+			  <button class="shopping"><img src="image/indexpic/shopping-cart.png" class="user" onclick="openNav()"></button>
+
+			  <div id="mySidenav" class="sidenav">
+			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  	
+			  		<img src="image/indexpic/shopping-cart_black.png" class="carpic">購物車:
+			  		
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">1</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">2</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">3</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  		</div>
+
+
+
+					<a href="buy.html"> <button type="button" class="buybtn">結帳</button></a>
+
+
+				</div>
+			  <script>
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "350px";				 
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+
+				function deleteNav() {
+				  document.getElementById("carr").style.display = "none";
+				}
+				</script>
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="image/indexpic/loupe.png" class="user"></button>
+			  <div class="dropdown-content search">
+			    <input type="text" placeholder="Search.." class="inputsearch">
+			    <button class="searchbutton"><img src="image/indexpic/search.png" class="searchpic"></button>	
+			  </div>
+			</div>  
+	
+		</div>				
+	</div>
+	
+	<div class="buy" style="background-color:white">
+			
+		
+		<div class="model-content">
+			<div class="main">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="flow">
+							<div class="flowListBox"> </div>
+						</div>
+					</div>
+					<div class="col-md-12" id="flowDiv">
+						<ol id="iList" style="margin-top:5px">
+							<div id="contA" >	
+								<div style="text-align:left;margin-left:5%">
+									<h3>確認訂單商品</h3>
+								</div>
+								<div id="List">
+									<div class="list-1">
+										<div>
+											<img src="image/3ce/cloud_lip/small.jpg">
+											<div class="list-product">
+												<p>3CE CLOUD LIP TINT KIT</p>
+												<p>色號：#ACTIVE LADY</p>
+												<p>×1</p>
+											</div>
+											<div class="list-price">
+												<p>$450</p>
+											</div>
+										</div>
+									</div>
+									<div class="list-1">				
+										<div>
+											<img src="image/etudehouse/bake/small.jpg">
+											<div class="list-product">
+												<p>ETUDE HOUSE 香醇烘焙麵包屋眼彩盤</p>
+												<p>色號：#Bake House</p>
+												<p>×1</p>
+											</div>
+											<div class="list-price">
+												<p>$700</p>
+											</div>
+										</div>
+									</div>
+									<div class="list-totalprice">
+										<p style="float:left;color:black">總金額:</p>		
+										<p>$1150</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="contentList" id="contB">
+								<div style="text-align:left;margin-left:10%">
+								 	<h3>填寫收件資料</h3>	
+								 </div> 	
+								<form class="contBform">
+									收件者名稱:<input type="text" name="receiver_name" required><br>
+									<p></p>
+									收件者地址:<input type="text" name="receiver_address" required><br>
+									<p></p>
+									收件者電話:<input type="text" name="receiver_tel" required><br>	
+									<p></p>								
+									取貨方式:<input type="radio" name="take" required >郵寄 +$100 
+									<input type="radio" name="take" required>超商 +$60 &nbsp; ★ 超商取貨滿999免運!★
+								</form>
+
+
+							</div>
+							<div class="contentList" id="contC"> 
+								<div style="text-align:left;margin-left:10%">
+									<h3>選擇付款方式</h3>
+								</div>
+								<form class="contBform">
+									付款方式:
+									
+									<br><input type="radio" name="pay" required style="margin-top:20px">信用卡<br>
+									<p></p>
+									<input type="radio" name="pay" required>貨到付款<br>
+									
+								</form>
+
+							</div>
+							<div class="contentList" id="contD">
+								<div style="text-align:left;margin-left:5%">
+									<h3>最後確認!</h3>
+								</div>
+									<div id="List">
+										<div class="list-1">
+											<div>
+												<img src="image/3ce/cloud_lip/small.jpg">
+												<div class="list-product">
+													<p>3CE CLOUD LIP TINT KIT</p>
+													<p>色號：#ACTIVE LADY</p>
+													<p>×1</p>
+												</div>
+												<div class="list-price">
+													<p>$450</p>
+												</div>
+											</div>
+										</div>
+										<div class="list-1">				
+											<div>
+												<img src="image/etudehouse/bake/small.jpg">
+												<div class="list-product">
+													<p>ETUDE HOUSE 香醇烘焙麵包屋眼彩盤</p>
+													<p>色號：#Bake House</p>
+													<p>×1</p>
+												</div>
+												<div class="list-price">
+													<p>$700</p>
+												</div>
+											</div>
+										</div>
+										<div class="list-totalprice" style="padding-top:0px">
+											
+											<p >運費:+$60</p>
+											<p >滿999免運-$60</p>
+							
+											<hr style="margin:0;border-top:2px #A35353 solid;">
+											<p >總金額:$1150</p>		
+											
+										</div>
+									</div>
+									<form class="contBform" style="width:90%">
+										收件者名稱: 賴柔君<br>
+										<p></p>
+										收件者地址: 桃園市中壢區大仁街35巷2號<br>
+										<p></p>
+										收件者電話: 0912112221<br>	
+										<p></p>								
+										取貨方式: 超商
+										<br>
+										<p></p>
+										付款方式: 貨到付款
+										<br>
+						
+									</form>
+
+
+							
+
+							</div>
+						</ol> 
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="foot-btn">
+			<button type="button" class="btn btn-primary" id="btnBack" style="float:left; margin-left:10px;font-family:'微軟正黑體';">上一步</button>
+			<button type="submit" class="btn btn-default"  style="float:right; display:none;font-family:'微軟正黑體';color:white;background-color:#A35353; margin-right:10px;" id="btnok">完成</button>
+			<button type="submit" class="btn btn-success"  style="float:right; margin-right:10px;font-family:'微軟正黑體';" id="btnNext">下一步</button>
+		</div>
+
+	
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script> 
+	<script type="text/javascript" src="assets/js/flow.js"></script> 
+	</div>
+
+	
+	<footer style="margin-top:20px;">
+		<p></p>
+		<p>+886-987987987&nbsp;|&nbsp;<a href="mailto:k.beauty@gmail.com">k.beauty@gmail.com</a></p>
+		<p>© 2019 by gglai,yu-chen,chun-yen,brian</p>
+
+	</footer>
+</body>
+</html>
