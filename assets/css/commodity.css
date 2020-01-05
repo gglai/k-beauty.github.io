@@ -12,7 +12,7 @@
 .weblogo{
 		height:17vh;
 		width: 8.3vw;
-		margin:10px 0 7px 0; 
+		margin:10px 0 10px 0; 
 		}
 .brand{	font-family: monospace;
 		font-size: 18px;
@@ -50,7 +50,6 @@
 		color:white;
 		font-family:"微軟正黑體";
 		 }
-
 .user{	
 		width: 35px;
 		height: 35px;
@@ -76,7 +75,17 @@
   		min-width: 110px;
   		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   		z-index: 1000;
-  		
+}
+.dropdown-content a:hover {
+		background-color: #D9C7C7;
+		color:#A35353;
+		text-decoration:none;
+		font-weight:bolder;}
+.dropbtn:focus{
+	outline:none;
+}
+.shopping:focus{
+	outline:none;
 }
 .search{
 		background-color:#F3C9C9;
@@ -220,12 +229,24 @@
   		overflow: auto; 
   		background-color: rgb(0,0,0); 
   		background-color: rgba(0,0,0,0.4); 
-  		overflow: hidden;
-
+  	
+}
+.indexinput {
+  		width: 83%;
+  		padding: 12px 20px;
+ 		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #A35353;
+ 	 	box-sizing: border-box;
+}
+.container_modal {
+  		padding: 15px;
+  		color:black;
+  		
 }
 .modal-content-index {
   		background-color: #FFE1E1;
-  		margin: 10% auto 15% auto; 
+  		margin: 10% auto 5% auto; 
   		border: 1px solid #888;
   		position:relative;
   		border-radius:20px;

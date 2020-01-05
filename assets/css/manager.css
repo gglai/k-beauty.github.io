@@ -1,0 +1,91 @@
+* {box-sizing: border-box}
+/* Style the tab */
+.tabb {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 200px;
+  border-right: none;
+  font-family:"微軟正黑體";
+}
+
+/* Style the buttons inside the tab */
+.tabb button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family:"微軟正黑體";
+}
+
+/* Change background color of buttons on hover */
+.tabb button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tabb button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontentt {
+  float: left;
+  padding: 0px 15px 30px 15px;
+  border: 1px solid #ccc;
+  width: 700px;
+  background-color:#FFFFFF;
+}
+
+.tabcontentt table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 微軟正黑體;
+}
+tr, td{
+  padding: 5px;
+
+}
+.aa{
+  border: #111 solid 1px;
+  background-color: #EEE;
+  height: 30px;
+}
+.bb{
+  border: #111 solid 1px;
+  height: 30px;
+}
+#Add .aa {
+  width: 210px;
+  text-align: center;
+}
+#Modify .aa {
+  width: 210px;
+  text-align: center;
+}
+#Delete .aa {
+  width: 210px;
+  text-align: center;
+}
+.navv{	
+		background-color:#A35353;
+		text-align: center;	
+		box-shadow: 0px 0px 20px 4px rgba(0,0,0, 0.1);	
+		margin:auto;
+		overflow: hidden;	
+	}
+.logo{	height:17vh;
+		width: 8.3vw;
+		margin-top:10px;
+		margin-bottom: 7px; }
+.body{	margin: 0;
+		background-color: #F3C9C9;		
+		font-family:"微軟正黑體";
+}

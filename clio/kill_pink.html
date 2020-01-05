@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CLIO KILL COVER GLOW CUSHION </title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/commodity.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+	
+	<script src="../assets/js/jquery.min.js"></script>
+	<script>
+		$(function(){
+    		$('#img-switch .small-img a').click(function(e) {
+       			var $imgSrc = $(this).attr('href');
+        		$('#img-switch .big-img img').attr('src',$imgSrc);
+        		return false;
+    		});
+		})
+	</script>
+	<script>
+		$(function() {
+			$('.qtyplus').click(function(e) {
+				e.preventDefault();
+				fieldName = $(this).attr('field');
+				var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+				if (!isNaN(currentVal)) {
+					$('input[name=' + fieldName + ']').val(currentVal + 1);
+				}
+				else {
+					$('input[name=' + fieldName + ']').val(0);
+				}
+			});
+			$(".qtyminus").click(function(e) {
+				e.preventDefault();
+				fieldName = $(this).attr('field');
+				var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+				if (!isNaN(currentVal) && currentVal > 0) {
+					$('input[name=' + fieldName + ']').val(currentVal - 1);
+				}
+				else {
+					$('input[name=' + fieldName + ']').val(0);
+				}
+			});
+		});
+	</script>
+
+</head>
+<body style="background-color:#EDE0E0;" >
+	
+</style>>
+	<div class=navv id="navbar">		
+			<div>
+				<a href="../index.html"><img src="../image/indexpic/K透.png" class="weblogo" id="logo"></a>
+			</div>
+		<ul class="cool" id="brandmove">
+				
+				
+			<a href="../3ce.html" style="text-decoration:none">
+			<li class="brand ">
+				3CE
+			</li></a>
+			<a href="../etudehouse.html" style="text-decoration:none">
+			<li class="brand et">
+				ETUDE HOUSE
+			</li></a>
+			<a href="../memebox.html" style="text-decoration:none">
+			<li class="brand ">
+				MEMEBOX
+			</li></a>
+			<a href="../clio.html" style="text-decoration:none">
+			<li class="brand ">
+				CLIO
+			</li></a>
+			<a href="../romand.html" style="text-decoration:none">
+			<li class="brand ">
+				Romand
+			</li></a>
+			<a href="../aboutus.html" style="text-decoration:none"><li class="brand rm">
+				About Us
+			</li></a>
+			
+		</ul>
+		<div class="people" id="people" >
+				訪客人數 : 7  <br>
+				現在時間:9:16PM
+			</div>
+		<div class="navright" id="navright">
+			
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="../image/indexpic/user.png" class="user"></button>
+			  <div class="dropdown-content">
+			    <a href="#" onclick="document.getElementById('id01').style.display='block'">登入</a>
+			    <a href="#" onclick="document.getElementById('id02').style.display='block'">註冊</a>
+			    <a href="../personal.html">我的帳戶</a>		
+			  </div>
+			</div>
+
+			<div id="id01" class="indexmodal"> 
+			  <form class="modal-content-index animate" action="/action_page.php" method="post" style="width:35%">
+			   	
+			      <span onclick="document.getElementById('id01').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="../image/kbeauty.png" class="logomodal">
+			    	<div class="login">登入</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="textmodal" placeholder="Email/使用者名稱" name="uname" required>
+
+				      
+				      <input type="password" placeholder="密碼" name="psw" required>
+				        
+				      <button type="submit" class="loginbut" style="margin-right:15px" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none'">註冊</button>
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">登入</button>
+				    </div>
+			   
+			  </form>
+			</div>
+
+			<div id="id02" class="indexmodal"> 
+			  <form class="modal-content-index animate"  method="post" style="width:35%;margin-top:5%">
+			   	
+			      <span onclick="document.getElementById('id02').style.display='none'" class="closemodal" title="Close Modal">&times;</span>
+			      	<img src="../image/kbeauty.png" class="logomodal">
+			    	<div class="login">註冊</div>
+
+				    <div class="container_modal">
+				   
+				      <input type="text" placeholder="使用者帳號" name="id" required class="indexinput">
+				      <input type="password" placeholder="密碼" name="password" required class="indexinput">
+					  <input type="password" placeholder="確認密碼" name="recheckpassword" required class="indexinput">
+					  <input type="text" placeholder="名字" name="name" required class="indexinput">
+					  <input type="text" placeholder="Email" name="email" required class="indexinput"><br>
+					  性別:&nbsp;&nbsp;<input type="radio" name="sex" value="male" required>男
+					  <input type="radio" name="sex" value="female" required>女
+					  &nbsp;&nbsp;生日:&nbsp;&nbsp;<input type="date" placeholder="生日" name="date" required>
+					  <input type="text" placeholder="電話" name="tel" required class="indexinput">
+					  <input type="text" placeholder="地址" name="address" required class="indexinput">
+
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">註冊</button>
+					</div>
+			   
+			  </form>
+			</div>
+
+			<div id="id03" class="indexmodal "> 
+				<div class="sussce animate">				
+					<img src="../image/duihao.png" class="duihao">	
+					<div>
+						註冊成功
+					</div>
+				</div>
+			</div>	
+		<script>
+			var modal = document.getElementById('id03');
+			window.onclick = function(event) {
+  			if (event.target == modal) {
+  			  modal.style.display = "none";
+			  }
+				}
+		</script>
+			
+			  <button class="shopping"><img src="../image/indexpic/shopping-cart.png" class="user" onclick="openNav()"></button>
+
+			  <div id="mySidenav" class="sidenav">
+			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  	
+			  		<img src="../image/indexpic/shopping-cart_black.png" class="carpic">購物車:
+			  		
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="../image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">5</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			
+			  		</div>
+
+			  		<div class="car" id="carr">
+			  			<div class="itempicdiv">
+			  				<img src="../image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
+			  				 <span class="badge1">5</span>
+			  			</div>
+			  			<div class="car_item">
+			  				3CE EYE SWITCH POT<br>
+			  				#BETTING
+			  			</div>
+			  			
+			  		</div>
+
+					<a href="../buy.html"> <button type="button" class="buybtn">結帳</button></a>
+
+
+				</div>
+			  <script>
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "350px";
+				 
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+
+				
+				</script>
+			<div class="dropdown">
+			  <button class="dropbtn"><img src="../image/indexpic/loupe.png" class="user"></button>
+			  <div class="dropdown-content search">
+			    <input type="text" placeholder="Search.." class="inputsearch">
+			    <button class="searchbutton"><img src="../image/indexpic/search.png" class="searchpic"></button>	
+			  </div>
+			</div>  
+	
+		</div>				
+	</div>
+	
+	<script>
+		
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		    document.getElementById("navbar").style.height = "80px";
+		    document.getElementById("navright").style.top = "1vh";
+		  	document.getElementById("logo").src = "../image/indexpic/K-Beauty.png";
+		  	document.getElementById("logo").style.width = "230px";
+		  	document.getElementById("logo").style.height = "80px";		  	
+		  	document.getElementById("logo").style.float = "left";
+		  	document.getElementById("logo").style.margin = "0 0 0 20px";
+		  	document.getElementById("brandmove").style.margin = "25px 215px 0 0";
+		  	document.getElementById("people").style.top = "2vh";
+			document.getElementById("people").style.left = "75vw";
+		  } else {
+		    document.getElementById("navbar").style.height = "25.5vh";
+		    document.getElementById("navright").style.top = "16vh";
+		    document.getElementById("logo").src = "../image/indexpic/K透.png";
+		    document.getElementById("logo").style.width = "8.3vw";
+		  	document.getElementById("logo").style.height = "17vh";
+		  	document.getElementById("logo").style.float = "none";
+		  	document.getElementById("logo").style.margin = "10px 0 10px 0";
+		  	document.getElementById("brandmove").style.margin = "0 auto 0 auto";
+		  	document.getElementById("people").style.top = "9vh";
+			document.getElementById("people").style.left = "86.6vw";
+		  }
+		}
+
+		     
+	</script>
+	<a name="top">123</a>
+	<div class="body">
+		<div id="img-switch">
+			<div class="big-img" ><img src="../image/clio/kill_pink/small2.jpg" id="big-img"></div>
+			<div class="small-img">
+				<a href="../image/clio/kill_pink/small2.jpg"><img src="../image/clio/kill_pink/small2.jpg"></a>
+				<a href="../image/clio/kill_pink/smallimg1.jpg"><img src="../image/clio/kill_pink/smallimg1.jpg"></a>
+				<a href="../image/clio/kill_pink/smallimg2.jpg"><img src="../image/clio/kill_pink/smallimg2.jpg"></a>
+				<a href="../image/clio/kill_pink/smallimg3.jpg"><img src="../image/clio/kill_pink/smallimg3.jpg"></a>
+				<a href="../image/clio/kill_pink/smallimg4.jpg"><img src="../image/clio/kill_pink/smallimg4.jpg"></a>
+				
+			</div>			
+		</div>
+		<div class="buy">
+			<p class="name">CLIO KILL COVER GLOW CUSHION </p>
+			
+			<ul style="padding-left: 0px;margin-top:10px">
+				<li class="score">4.8★</li>
+				<li class="tag">超商取貨滿999免運</li>
+			
+			</ul>
+			<p class="price">$690</p>
+		<form >
+			<div class="colornum" style="margin-bottom:0 ">
+				<p style="font-size:20px">色號</p>	
+				
+								
+				<button type="button" class="choice" onclick="choice1()" name="betting">
+					#2 Lingerie
+				</button>
+				<button type="button" class="choice" onclick="choice1()" name="throbbing">
+					#3 Linen
+				</button>
+				<button type="button" class="choice" onclick="choice1()" name="stuck">
+					#4 Ginger
+				</button>
+				<button type="button" class="choice" onclick="choice1()" name="stuck">
+					#5 Sand
+				</button>
+				
+
+			</div>
+			<script>
+				
+				function choice1(){					
+					document.getElementById("big-img").src="../image/clio/kill_pink/smallimg2.jpg";
+					
+				}
+				
+				
+				
+			</script>
+			
+			<div class="amount" >
+				<p style="font-size:20px">數量</p>
+				<button type="button" class="qtyminus" field="quantity">
+					<img src="../image/minus.png" style="width:30px;">
+				</button>
+				<input type="text" name="quantity" value="0" class="qty" >
+				<button type="button" class="qtyplus" field="quantity">
+					<img src="../image/plus.png" style="width:30px;">
+				</button>
+				<div><p style="margin-top:15px">庫存數量 : </p></div>
+				<button type="button" class="heart " value="" id="like1" rel="like" ></button>
+				<div class="hearttext">
+					收藏</div>
+				<input id="likeCount" type="hidden" name="likeCount" >
+			</div>
+
+			<button type="submit" class="buy" onclick="aaa()">加入購物車</button>
+			
+			<button type="submit" class="buy" onclick="aaa()">直接購買</button>
+		</div>
+		
+	</form>
+		<script src="../assets/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			$('body').on("click",'.heart',function(){
+		
+				var A=$(this).attr("id");
+				var B=A.split("like");
+				$(this).css("background-position","")
+				var D=$(this).attr("rel");
+	   
+				if(D === 'like') {      
+					$("#likeCount").val(1);
+					$(this).addClass("heartAnimation").attr("rel","unlike");
+					}
+				else{
+					$("#likeCount").val(0);
+					$(this).removeClass("heartAnimation").attr("rel","like");
+					$(this).css("background-position","left");
+					}
+				});
+
+			});
+		</script>
+		<div style="clear: both;"></div>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">商品詳情</button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')">商品規格</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">商品評價</button>
+			<button class="tablinks" onclick="openCity(event, 'fuck')">網路推薦</button>
+		</div>
+		<div id="London" class="tabcontent">
+			<div class="pic">
+				<img src="../image/clio/kill_pink/all.jpg">
+				
+				
+			</div>
+			
+		</div>
+		<div id="Paris" class="tabcontent">
+			<div class="pic">
+				<p>產　　地：韓國</p>
+				<p>保存期限：正確效期請以實際出貨實品標示為主。</p>
+				<p>有效期限與開封後使用期限：製造日期起36個月/開封後12個月</p>
+				<p>保存方式：請置於陰涼處，避免陽光直接照射，以免變質。</p>
+				<p>注意事項：</p>
+				<p>1.本使用後若有不適請即刻停止使用，並請教專業醫生。</p>
+				<p>2.商品屬私人消耗性產品，一經拆封使用，恕無法辦理退換貨。</p>
+				<p>3.因電腦螢幕設定及個人觀感之差異，本賣場之商品圖片僅供參考，以收到實際商品為準。</p>
+				<p>4.對於商品有任何疑問，請先不要拆封，請儘速向客服反應，以免影響您辦退的權益，也可能依照損毀程度扣除為回復原狀所必要的費用。</p>
+				<p>5.退換貨商品，請務必保持包裝外盒完整，已拆封使用過、無法恢復原狀等...，均恕無法辦理退換貨。</p>
+			</div>	
+		</div>
+		<div id="Tokyo" class="tabcontent">
+			<div class="pic" style="margin-top:20px;text-align:left">					
+				<div class="kipupu">
+				<h1 >4.8/5</h1>
+        		<p>共2則評論</p>
+				</div>			
+        		
+        		<ul class="starul">
+        			<li>★★★★★<b>(1)</b></li>
+        			<li>★★★★☆<b>(1)</b></li>
+        			<li>★★★☆☆<b>(0)</b></li>
+        			<li>★★☆☆☆<b>(0)</b></li>
+        			<li>★☆☆☆☆<b>(0)</b></li>
+        		</ul>
+        		<button type="button" class="reviwe" onclick="rew_show()">撰寫評論
+        		<img src="../image/writing.png" class="write"></button>
+        		<script>				
+				function rew_show() {
+				  document.getElementById("rew_write").classList.toggle("show");
+				}				
+				</script>
+
+        		<div id="rew_write" class="rew_writeclass">
+       				<form style="padding:5px 20px 10px 30px">
+
+				    <label >姓名</label>
+				    <input type="retext" readonly> 
+				    
+
+				    <label style="display:inline-block;margin-left:50px;margin-right:10px">性別</label>
+				    <input type="radio" name="gb" value="boy" style="display:inline-block" required> 男
+					<input type="radio" name="gb" value="girl" style="display:inline-block" required> 女
+				    
+
+				    <label style="display:inline-block;margin-left:50px">色號</label>
+				    <select  name="choice" style="display:inline-block" required>
+				      <option value="">請選擇</option>				    	
+				      <option value="betting">#BETTING</option>
+				      <option value="throbbing">#THROBBING</option>
+				      <option value="stuck">#STUCK</option>
+				      <option value="petal">#PETAL</option>
+				      <option value="doublenote">#DOUBLE NOTE</option>
+				    </select>
+				    
+				    <label style="display:inline-block;margin-left:50px">評分</label>
+					<ul id="star">
+						<li>★</li>
+						<li>★</li>
+						<li>★</li>
+						<li>★</li>
+						<li>★</li>
+					</ul>
+					<div style="display:inline-block;margin-left:15px">
+						<div id="star_word"></div>
+					</div>
+					
+					<script>
+					window.onload = function(){
+
+					  var star = document.getElementById("star");
+					    var star_li = star.getElementsByTagName("li");
+					    var star_word = document.getElementById("star_word");
+					   
+					    var i=0;
+					    var j=0;
+					    var len = star_li.length;
+					    var word = ['1','2','3',"4","5"]
+					   
+					    for(i=0; i<len; i++){
+					      star_li[i].index = i;
+					       					      
+					        star_li[i].onmouseover = function(){
+					          		star_word.style.display = "block";
+					                star_word.innerHTML = word[this.index]+" / 5 ";
+					                for(i=0; i<len; i++){
+					                	if(i<=this.index)
+					                	{
+					                		star_li[i].className = "act";	
+
+					                	}
+					                   else
+					                   {
+					                   		star_li[i].className = "";
+					                   }
+					              }
+					                   
+					        }
+					       
+
+					    }
+
+					}
+					</script>
+					<br>
+				    <label style="margin-top:10px">標題</label>
+				    <input type="retext" style="width:40%" placeholder="25字以內" maxlength="25" required> 
+				    <br>
+
+				    <label style="position:relative;top:-80px">內容</label>
+				    
+				    <textarea style="width:70%;height:100px;margin-top:10px"placeholder="250字以內" maxlength="250" required></textarea>
+					<button type="submit" class="rewpost">送出</button>
+				    
+				  </form>
+       			</div>
+       			<hr style="margin-top:10px">
+
+
+       			
+
+
+
+
+				<div class="rew">
+					<img src="../image/girl.png" class="rewpic">
+					<ul class="rewul">
+						<li>Selina</li>
+						<li>色號:#BETTING</li>
+						<li>★★★★☆</li>
+					</ul>
+					<div class="rewtxt">
+						<h4>TITLE</h4>
+						<p>還好還好還好</p>
+					</div>
+					<p class="time">2019/12/22</p>
+				</div>
+				<div class="rew">
+					<img src="../image/man.png" class="rewpic">
+					<ul class="rewul">
+						<li>V</li>
+						<li>色號:#BETTING</li>
+						<li>★★★★★</li>
+					</ul>
+					<div class="rewtxt">
+						<h4>TITLE</h4>
+						<p>好棒好棒好棒好棒</p>
+					</div>
+					<p class="time">2019/12/22</p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="fuck" class="tabcontent">
+			<div class="pic">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/eUDZBOMJT60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/1xxo7V1YvGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Fr3xiZCRADo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				
+			</div>
+		</div>
+		<script>
+			function openCity(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			document.getElementById("defaultOpen").click();
+			</script>
+	</div>
+	<footer>
+		<p></p>
+		<p>+886-987987987&nbsp;|&nbsp;<a href="mailto:k.beauty@gmail.com">k.beauty@gmail.com</a></p>
+		<p>© 2019 by gglai,yu-chen,chun-yen,brian</p>
+
+	</footer>
+	<div class="updiv">
+		<a href="#top"><img src="../image/up.png" class="uppic"></a>
+	</div> 
+</body>
+</html>

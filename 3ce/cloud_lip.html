@@ -53,9 +53,7 @@
 			</div>
 		<ul class="cool" id="brandmove">
 				
-			<a href="../aboutus.html" style="text-decoration:none"><li class="brand ">
-				About Us
-			</li></a>	
+				
 			<a href="../3ce.html" style="text-decoration:none">
 			<li class="brand ">
 				3CE
@@ -73,8 +71,11 @@
 				CLIO
 			</li></a>
 			<a href="../romand.html" style="text-decoration:none">
-			<li class="brand rm">
+			<li class="brand ">
 				Romand
+			</li></a>
+			<a href="../aboutus.html" style="text-decoration:none"><li class="brand rm">
+				About Us
 			</li></a>
 			
 		</ul>
@@ -123,12 +124,18 @@
 
 				    <div class="container_modal">
 				   
-				      <input type="textmodal" placeholder="Email" name="uname" required>
-				      <input type="textmodal" placeholder="使用者帳號" name="uname" required>
-				      <input type="password" placeholder="密碼" name="psw" required>
-				      <input type="password" placeholder="確認密碼" name="uname" required>
+				      <input type="text" placeholder="使用者帳號" name="id" required class="indexinput">
+				      <input type="password" placeholder="密碼" name="password" required class="indexinput">
+					  <input type="password" placeholder="確認密碼" name="recheckpassword" required class="indexinput">
+					  <input type="text" placeholder="名字" name="name" required class="indexinput">
+					  <input type="text" placeholder="Email" name="email" required class="indexinput"><br>
+					  性別:&nbsp;&nbsp;<input type="radio" name="sex" value="male" required>男
+					  <input type="radio" name="sex" value="female" required>女
+					  &nbsp;&nbsp;生日:&nbsp;&nbsp;<input type="date" placeholder="生日" name="date" required>
+					  <input type="text" placeholder="電話" name="tel" required class="indexinput">
+					  <input type="text" placeholder="地址" name="address" required class="indexinput">
 
-				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white" onclick="document.getElementById('id03').style.display='block';document.getElementById('id02').style.display='none'">註冊</button>
+				      <button type="submit" class="loginbut" style="background-color: #A35353;color:white">註冊</button>
 					</div>
 			   
 			  </form>
@@ -160,26 +167,26 @@
 			  		
 			  		<div class="car" id="carr">
 			  			<div class="itempicdiv">
-			  				<img src="../image/3ce/cloud_lip/betting3.jpg" class="itempic">
+			  				<img src="../image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
 			  				 <span class="badge1">5</span>
 			  			</div>
 			  			<div class="car_item">
 			  				3CE EYE SWITCH POT<br>
 			  				#BETTING
 			  			</div>
-			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  			
 			  		</div>
 
 			  		<div class="car" id="carr">
 			  			<div class="itempicdiv">
-			  				<img src="../image/3ce/cloud_lip/betting3.jpg" class="itempic">
+			  				<img src="../image/3ce/eye_switch_pot/betting3.jpg" class="itempic">
 			  				 <span class="badge1">5</span>
 			  			</div>
 			  			<div class="car_item">
 			  				3CE EYE SWITCH POT<br>
 			  				#BETTING
 			  			</div>
-			  			<span class="close" onclick="deleteNav()">&times;</span>
+			  			
 			  		</div>
 
 					<a href="../buy.html"> <button type="button" class="buybtn">結帳</button></a>
@@ -196,9 +203,7 @@
 				  document.getElementById("mySidenav").style.width = "0";
 				}
 
-				function deleteNav() {
-				  document.getElementById("carr").style.display = "none";
-				}
+				
 				</script>
 			<div class="dropdown">
 			  <button class="dropbtn"><img src="../image/indexpic/loupe.png" class="user"></button>
@@ -226,18 +231,18 @@
 		  	document.getElementById("logo").style.margin = "0 0 0 20px";
 		  	document.getElementById("brandmove").style.margin = "25px 215px 0 0";
 		  	document.getElementById("people").style.top = "2vh";
-			document.getElementById("people").style.left = "77vw";
+			document.getElementById("people").style.left = "75vw";
 		  } else {
-		    document.getElementById("navbar").style.height = "23.5vh";
+		    document.getElementById("navbar").style.height = "25.5vh";
 		    document.getElementById("navright").style.top = "16vh";
 		    document.getElementById("logo").src = "../image/indexpic/K透.png";
 		    document.getElementById("logo").style.width = "8.3vw";
 		  	document.getElementById("logo").style.height = "17vh";
 		  	document.getElementById("logo").style.float = "none";
-		  	document.getElementById("logo").style.margin = "10px 0 7px 0";
+		  	document.getElementById("logo").style.margin = "10px 0 10px 0";
 		  	document.getElementById("brandmove").style.margin = "0 auto 0 auto";
 		  	document.getElementById("people").style.top = "9vh";
-			document.getElementById("people").style.left = "86.5vw";
+			document.getElementById("people").style.left = "86.6vw";
 		  }
 		}
 

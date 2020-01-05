@@ -1,6 +1,6 @@
 .logo{
 	width:1070px;
-	margin:26vh auto 20px auto;
+	margin:27vh auto 20px auto;
 
 }
 
@@ -18,6 +18,7 @@ hr.no1 {
 }
 .nav02{
 	color:#555555;
+	cursor:pointer;
 
 }
 .nav02:hover{
@@ -92,21 +93,21 @@ hr.no1 {
 .navright{		
 		position: absolute;
 		top:16vh;
-		left:85vw;
+		left:86.6vw;
 		color:#FFFFFF;
 		font-family: "微軟正黑體";
 		transition: 0.3s;
 }
 .people{text-align: left;
 		position: absolute;
-		left:85vw; 
+		left:86.5vw; 
 		top:9vh;
 		color:white;
 		font-family:"微軟正黑體";
 		 }
 .user{	
-		width: 30px;
-		height: 30px;
+		width: 35px;
+		height: 35px;
 		}
 
 .dropbtn {
@@ -120,7 +121,12 @@ hr.no1 {
   		left:-15px;
   		display: inline-block;
 }
-
+.dropbtn:focus{
+	outline:none;
+}
+.shopping:focus{
+	outline:none;
+}
 .dropdown-content {
   		display: none;
   		position: absolute;
@@ -131,6 +137,11 @@ hr.no1 {
   		z-index: 1000;
   		
 }
+.dropdown-content a:hover {
+		background-color: #D9C7C7;
+		color:#A35353;
+		text-decoration:none;
+		font-weight:bolder;}
 .search{
 		background-color:#F3C9C9;
 		position: absolute;
@@ -273,12 +284,24 @@ hr.no1 {
   		overflow: auto; 
   		background-color: rgb(0,0,0); 
   		background-color: rgba(0,0,0,0.4); 
-  		overflow: hidden;
-
+  	
+}
+.indexinput {
+  		width: 83%;
+  		padding: 12px 20px;
+ 		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #A35353;
+ 	 	box-sizing: border-box;
+}
+.container_modal {
+  		padding: 15px;
+  		color:black;
+  		
 }
 .modal-content-index {
   		background-color: #FFE1E1;
-  		margin: 10% auto 15% auto; 
+  		margin: 10% auto 5% auto; 
   		border: 1px solid #888;
   		position:relative;
   		border-radius:20px;
@@ -442,7 +465,7 @@ footer a:hover{
   margin-bottom: 50px;
   font-family:monospace;
   font-size: 30px;
-
+  cursor:pointer;
 }
 #id3ce h3{
   text-align: center;
